@@ -1,0 +1,29 @@
+{
+  "eldorado": {
+    "email": "SEU_EMAIL_AQUI",
+    "password": "SUA_SENHA_AQUI"
+  },
+  "filtros": {
+    "tiposServico": ["boost", "Boost"],
+    "regioes": ["BR", "LATAM"],
+    "orcamentoMinimo": 10,
+    "orcamentoMaximo": 1000,
+    "palavrasChave": ["boost", "rank", "elo", "diamond", "gold", "platinum"],
+    "palavrasExcluir": ["cheap", "barato", "low budget"]
+  },
+  "respostaAutomatica": {
+    "ativo": true,
+    "mensagem": "Olá! Posso fazer o boost por ${preco}. Entrega em 2-3 dias, 100% seguro. Aceita?"
+  },
+  "discord": {
+    "ativo": true,
+    "webhookUrl": "COLE_A_URL_DO_SEU_WEBHOOK_AQUI"
+  },
+  "configuracoes": {
+    "intervaloSegundos": 30,
+    "precoBase": 20,
+    "markup": 50,
+    "headless": false,
+    "somNotificacao": true
+  }
+}
