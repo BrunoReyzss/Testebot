@@ -92,6 +92,34 @@ export type MonitoredRequest = {
   offer_sent_at: string | null;
   created_at: string;
   updated_at: string;
+  game_name: string | null;
+  buyer_username: string | null;
+  order_url: string | null;
+};
+
+export type EldoradoCredentials = {
+  id: string;
+  user_id: string;
+  email: string;
+  password_encrypted: string | null;
+  two_factor_secret: string | null;
+  last_login: string | null;
+  login_status: 'pending' | 'success' | 'failed';
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+};
+
+export type WorkerSession = {
+  id: string;
+  user_id: string;
+  worker_type: 'browser' | 'api';
+  status: 'stopped' | 'starting' | 'running' | 'error';
+  last_heartbeat: string | null;
+  error_message: string | null;
+  config: Record<string, unknown>;
+  created_at: string;
+  updated_at: string;
 };
 
 export type LogLevel = 'info' | 'warn' | 'error' | 'success';

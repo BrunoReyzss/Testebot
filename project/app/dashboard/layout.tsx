@@ -8,19 +8,7 @@ import { useSettings } from '@/lib/use-settings';
 import { useBotMonitor } from '@/lib/use-bot-monitor';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import {
-  Zap,
-  LayoutDashboard,
-  Radar,
-  DollarSign,
-  Bot,
-  Bell,
-  Settings as SettingsIcon,
-  ScrollText,
-  LogOut,
-  Loader2,
-  Circle,
-} from 'lucide-react';
+import { Zap, LayoutDashboard, Radar, DollarSign, Bot, Bell, Settings as SettingsIcon, ScrollText, LogOut, Loader as Loader2, Circle, Key } from 'lucide-react';
 
 const navItems = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -28,6 +16,7 @@ const navItems = [
   { href: '/dashboard/pricing', label: 'Precificação', icon: DollarSign },
   { href: '/dashboard/automation', label: 'Automação', icon: Bot },
   { href: '/dashboard/discord', label: 'Discord', icon: Bell },
+  { href: '/dashboard/credentials', label: 'Credenciais', icon: Key },
   { href: '/dashboard/logs', label: 'Logs', icon: ScrollText },
   { href: '/dashboard/settings', label: 'Configurações', icon: SettingsIcon },
 ];
